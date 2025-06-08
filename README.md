@@ -43,4 +43,4 @@ Le mode poulailler est un mode humoristique qui permet d'afficher une petite pou
 
 ### **Graphe décrivant l’architecture de votre application**
 
-![Graphe de l'architecture](src\assets\images\graphe_pharmacie.jpg)
+![Graphe de l'architecture](src/assets/images/graphe_pharmacie.jpg)
