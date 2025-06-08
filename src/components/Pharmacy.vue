@@ -32,7 +32,7 @@ function displayMedicationField() {
 }
 
 
-function refreshMedicationList() {
+function refreshListMedications() {
   if (newList.value) {
     newList.value.getMedication();
     newMedication.value = false;
@@ -68,7 +68,7 @@ function displayCommand() {
 
   <button @click="displayMedicationField">Ajout d'un medicament</button>
 
-  <AddMedication v-if="newMedication" @rafraichirListeMedicaments="refreshMedicationList" />
+  <AddMedication v-if="newMedication" @refreshListMedications="refreshListMedications" />
 </template>
 
 <style scoped>

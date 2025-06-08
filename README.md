@@ -40,3 +40,7 @@ La fonctionnalité "commande" et "liste des commandes client" est générée en 
 Pour filtrer les médicaments par forme pharmaceutique, il suffit d'en sélectionner une dans le menu déroulant. Lorsque ce dernier est sélectionné, les médicaments concernés s'affichent. Afin de retrouver la liste initiale de médicaments, il suffit de re-sélectionner "Choisir une catégorie". De plus, lorsque nous ajoutons un nouveau médicament avec un nouveau type de forme pharmaceutique, la liste déroulante se met à jour.
 
 Le mode poulailler est un mode humoristique qui permet d'afficher une petite poule dansante. Afin qu'elle disparaisse, il suffit de **re-cliquer** sur le bouton.
+
+### **Graphe décrivant l’architecture de votre application**
+
+![Graphe de l'architecture](src\assets\images\graphe_pharmacie.jpg)

@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from "vue";
 const url = "https://apipharmacie.pecatte.fr/api/8/medicaments"
-const emit = defineEmits(['rafraichirListeMedicaments']);
+const emit = defineEmits(['refreshListMedications']);
 
 const denomination = ref("");
 const formPharmaceutique = ref("");
@@ -21,7 +21,7 @@ function addMedication() { // ce qui est sortie du formulaire
       .then((response) =>{ return response.json()
       })
       .then((dataJSON) => {
-        emit('rafraichirListeMedicaments');
+        emit('refreshListMedications');
       })
       .catch((error) => console.log(error));
 
