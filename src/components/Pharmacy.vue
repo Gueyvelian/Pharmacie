@@ -51,7 +51,7 @@ function displayCommand() {
   <Header/>
   <button @click="displayCommandField">Faire une commande</button>
 
-  <DoCommand v-if="display" :listCommand="listCommand" @displayCommande="displayCommand" />
+  <DoCommand v-if="display" :listCommand="listCommand" @displayCommand="displayCommand" />
 
 
   <button @click="displayListCommand">{{ textButtonListCommand }}</button>
