@@ -1,9 +1,9 @@
-export default class Medicament {
-    constructor(denomination, formepharmaceutique, qte, photo, id) {
+export default class Medication {
+    constructor(denomination, pharmaceuticalForm, Quantity, photo, id) {
         this.id = id;
         this._denomination = denomination;
-        this._formepharmaceutique = formepharmaceutique;
-        this._qte = qte;
+        this._pharmaceuticalForm = pharmaceuticalForm;
+        this._Quantity = Quantity;
         this._photo = photo;
     }
 
@@ -12,12 +12,12 @@ export default class Medicament {
         return this._denomination;
     }
 
-    get formepharmaceutique() {
-        return this._formepharmaceutique;
+    get pharmaceuticalForm() {
+        return this._pharmaceuticalForm;
     }
 
-    get qte() {
-        return this._qte;
+    get quantity() {
+        return this._quantity;
     }
 
     get photo() {
@@ -32,12 +32,12 @@ export default class Medicament {
         this._denomination = value;
     }
 
-    set formepharmaceutique(value) {
-        this._formepharmaceutique = value;
+    set pharmaceuticalForm(value) {
+        this._pharmaceuticalForm = value;
     }
 
-    set qte(value) {
-        this._qte = value;
+    set quantity(value) {
+        this._quantity = value;
     }
 
     set photo(value) {

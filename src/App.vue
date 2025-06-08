@@ -1,9 +1,9 @@
 <script setup>
-import Pharmacie from "@/components/Pharmacie.vue";
+import Pharmacy from "@/components/Pharmacy.vue";
 </script>
 
 <template>
-  <Pharmacie/>
+  <Pharmacy/>
 </template>
 
 <style scoped>

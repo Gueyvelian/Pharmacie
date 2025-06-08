@@ -1,18 +1,18 @@
 <script setup>
 import {ref} from "vue";
 
-const afficheImage = ref(false)
+const displayImage = ref(false)
 
-function modePoule(){
-  afficheImage.value=!afficheImage.value
+function modeCotCot(){
+  displayImage.value=!displayImage.value
 }
 </script>
 
 <template>
   <h1>Stock de la pharmacie</h1>
-  <button @click="modePoule">Mode Cot Cot</button>
+  <button @click="modeCotCot">Mode Cot Cot</button>
   <div class="image">
-    <img v-if="afficheImage" src="../assets/images/cocotte.gif" alt="L'image de la poule" class="image"/>
+    <img v-if="displayImage" src="../assets/images/cocotte.gif" alt="L'image de la poule" class="image"/>
   </div>
 </template>
 

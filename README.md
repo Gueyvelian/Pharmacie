@@ -27,7 +27,7 @@ De plus, nous pouvons rechercher des médicaments par leurs noms. Cette recherch
 
 ### Fonctionnalités supplémentaires en local
 
-La pharmacie comporte une fonctionnalité "Commande" qui permet de créer une commande client. Cette fonctionnalité est acsécible en cliquant sur un bouton en haut de la page. Lorsque, le bouton est enclenché, il ouvre la possibilité de voir et remplir des champs de texte afin de caractériser une commande (nom du demandeur de la commande, nom du médicament commandé, nombre de boîtes de ce médicament). Après avoir validé cela crée une commande.
+La pharmacie comporte une fonctionnalité "Command" qui permet de créer une commande client. Cette fonctionnalité est acsécible en cliquant sur un bouton en haut de la page. Lorsque, le bouton est enclenché, il ouvre la possibilité de voir et remplir des champs de texte afin de caractériser une commande (nom du demandeur de la commande, nom du médicament commandé, nombre de boîtes de ce médicament). Après avoir validé cela crée une commande.
 
 Toutes les commandes peuvent être observé en cliquant sur le bouton à droite de celui décrit précédemment. Ce dernier affiche alors la liste des commandes créées.
 
