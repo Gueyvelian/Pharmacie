@@ -28,7 +28,6 @@ function getMedication() {
       .catch(console.error);
 }
 
-// Supprime un médicament via son ID
 function deleteMedication (id) {
   fetch(`${API_URL}/${id}`, { method: "DELETE" })
       .then(res => res.json())
@@ -36,19 +35,17 @@ function deleteMedication (id) {
       .catch(console.error);
 }
 
-// Met à jour la quantité d’un médicament, ou le supprime si qte <= 0
 function modifyQuantity(medication) {
   const copyMedication = { ...medication };
   delete copyMedication.photo;
 
-  if (copyMedication.quantity <= 0) {
+  if (copyMedication.qte <= 0) {
     deleteMedication(copyMedication.id);
   } else {
     modifyMedication(copyMedication);
   }
 }
 
-// Modifie un médicament (PUT)
 function modifyMedication(medication){
   fetch(API_URL, {
     method: "PUT",
@@ -123,7 +120,7 @@ defineExpose({
         v-for="(medication, index) in medicationFiltered"
         :key="medication.id"
         :medication="medication"
-        :indexMedicamant="index"
+        :indexMedication="index"
         @eventDeleteItem="deleteMedication"
         @eventModifyQuantityItem="modifyQuantity"
         @eventModify="modifyMedication"

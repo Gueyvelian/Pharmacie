@@ -43,7 +43,7 @@ const handleFileUpload = (event) => {
   <div class="card">
     <p>{{medication.denomination}}</p>
     <ul>
-      <li>Quantite en stock: {{ medication.quantity }}</li>
+      <li>Quantite en stock: {{ medication.qte }}</li>
       <li>Sous forme de: {{medication.formepharmaceutique}}</li>
     </ul>
 
@@ -65,8 +65,8 @@ const handleFileUpload = (event) => {
       </div>
 
       <div>
-        <button @click="$emit('eventModifyQuantityItem', { ...medication, qte: medication.quantity + 1 })">+1</button>
-        <button @click="$emit('eventModifyQuantityItem', { ...medication, qte: medication.quantity - 1 })">-1</button>
+        <button @click="$emit('eventModifyQuantityItem', { ...medication, qte: medication.qte + 1 })">+1</button>
+        <button @click="$emit('eventModifyQuantityItem', { ...medication, qte: medication.qte - 1 })">-1</button>
       </div>
       <br>
       <div class="image">
